@@ -1,0 +1,73 @@
+.log-reg {
+  padding: 1em;
+  height: 87vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.log-reg h2 {
+  font-size: 5em;
+  text-transform: capitalize;
+  font-weight: 800;
+  margin-bottom: 1em;
+}
+.log-reg form {
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.reg form {
+  gap: 0.5rem;
+  align-items: start;
+}
+.log-reg form .input-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+.log-reg input {
+  width: 100%;
+}
+.log-reg form span {
+  color: #444;
+  font-weight: 100;
+  font-size: 0.7em;
+}
+.log-reg form label {
+  color: #444;
+  font-weight: 200;
+}
+
+.log-reg .button {
+  outline: none;
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1em;
+  box-shadow: none;
+  border: none;
+  background: rgb(255, 162, 23);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.log-reg .alt {
+  background: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: orange;
+}
+.log-reg a {
+  width: 100%;
+}
+.log-reg button:hover {
+  filter: brightness(80%);
+}
+
+.log-reg .alt:hover {
+  background: rgba(227, 227, 227, 0.242);
+}

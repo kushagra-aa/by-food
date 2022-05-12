@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block topics %}
+<h1>Food items</h1>
+<div class="page-con page-center">
+  <div class="page-grid">
+    {% for food in foods %}
+    <a href={% url 'byfood:order' food.id %} class="card">
+      <img
+      src={{food.url}}
+      alt=""
+      />
+      <div class="">
+        <h2>{{food.name}}</h2>
+        <p>
+          {{food.price}}
+        </p>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

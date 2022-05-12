@@ -1,0 +1,72 @@
+.page-con {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  gap: 2em;
+}
+.page-con > div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.5em;
+  gap: 0.5em;
+  width: 80%;
+}
+h1 {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  color: rgb(255, 174, 0);
+  font-weight: 300;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+h2 {
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #ffae00;
+}
+h3 {
+  font-weight: 200;
+  font-size: 0.8rem;
+  color: rgb(58, 58, 58);
+}
+p {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: rgb(250, 212, 87);
+}
+.page-center {
+  align-items: center;
+  justify-content: center;
+}
+.page-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem !important;
+}
+.card {
+  display: flex;
+  /* flex-direction: column; */
+  width: 100%;
+  height: 5em;
+  gap: 3rem;
+  align-items: center;
+  overflow: hidden;
+  background: rgb(10, 16, 19);
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.card:hover {
+  filter: brightness(90%);
+}
+.card:hover img {
+  transform: scale(1.3);
+}
+.card img {
+  height: 100%;
+  width: 25%;
+  transition: transform 0.5s ease-in-out;
+}
+.card h2 {
+  text-transform: capitalize;
+}

@@ -1,0 +1,56 @@
+{% extends 'base.html' %} {% block order %}
+<div class="log-reg reg">
+  <form action="/handleOrder/" method="post">
+    {% csrf_token %}
+    <h2 class="">Make Order</h2>
+    {% comment %} quantity {% endcomment %}
+    <div class="input-group">
+      <label for="quantity">Quantity</label>
+      <input
+        type="number"
+        id="quantity"
+        name="quantity"
+        placeholder="Enter Quantity"
+        required
+        min="1"
+        class=""
+      />
+    </div>
+    <input
+      type="text"
+      id="item_id"
+      name="item_id"
+      value="{{item.id}}"
+      hidden
+      required
+      class=""
+    />
+    <input
+      type="text"
+      id="item_rate"
+      name="item_rate"
+      value="{{item.price}}"
+      hidden
+      required
+      class=""
+    />
+    <input
+      type="text"
+      id="item_name"
+      name="item_name"
+      value="{{item.name}}"
+      hidden
+      required
+      class=""
+    />
+    <div class="input-group">
+      <button id="start-camera" class="button">Start Camera</button>
+      <video id="video" width="320" height="240" autoplay></video>
+      <button id="click-photo" class="button">Click Photo</button>
+      <canvas id="canvas" width="320" height="240"></canvas>
+    </div>
+    <button type="submit" class="button">Order</button>
+    <input type="text" id="f_print" name="f_print" hidden required class="" />
+  </form>
+</div>
+{% endblock %}

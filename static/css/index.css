@@ -1,0 +1,82 @@
+@import url("./page.css");
+@import url("./logreg.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.message {
+  color: #ff6584;
+  background: rgb(255, 220, 154);
+  width: 100%;
+  padding: 0.5em;
+  text-align: center;
+}
+.heading {
+  font-size: 3rem;
+  color: #ff6584;
+}
+.home-img {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+}
+h2 a {
+  text-decoration: underline;
+  padding-left: 0.5em;
+  text-transform: capitalize;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  background: orange;
+  color: white;
+  font-weight: 700;
+  text-transform: capitalize;
+  overflow: hidden;
+}
+nav a {
+  height: 100%;
+  padding: 1em 2em;
+  transition: all 0.5s ease-in-out;
+}
+nav a:hover {
+  background: wheat;
+  color: black;
+}
+.nav-right {
+  color: black;
+  font-weight: normal;
+  outline: 2px solid black;
+  outline-offset: -10px;
+}
+.nav-right:hover {
+  background: inherit;
+  outline: 20px solid black;
+  background: black;
+  color: white;
+}
+main {
+  position: relative;
+  min-height: 87vh;
+  background: rgb(19, 27, 30);
+}
+footer {
+  /* position: absolute; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 2.5rem;
+  padding: 1em;
+  /* bottom: 0; */
+}

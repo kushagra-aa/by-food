@@ -1,0 +1,13 @@
+{% extends 'base.html' %} 
+{% comment %} home block {% endcomment %}
+{% load static %}
+{% block home %}
+<h1 class="heading">Welcome to ByFood!</h1>
+{% comment %} items section {% endcomment %}
+<section>
+  <a href="/food">
+    <h1>order now!!!</h1>
+  </a>
+  <img class="home-img" src={% static 'assets/home.svg'%} alt="">
+</section>
+{% endblock %}

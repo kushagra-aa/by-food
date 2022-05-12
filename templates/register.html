@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block register %}
+<div class="log-reg reg">
+  {% if from.errors %}
+  <p>there was an error</p>
+  {% endif %}
+  <h2 class="">register</h2>
+  <form action="/handleRegister/" method="POST">
+    {% csrf_token %} {{ form}}
+    <input type="submit" value="Register" class="button" />
+    <button class="button alt">
+      <a href="/login"> already have an account? </a>
+    </button>
+  </form>
+</div>
+{% endblock %}

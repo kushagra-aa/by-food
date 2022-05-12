@@ -1,0 +1,13 @@
+{% block nav %}
+<nav>
+  <a href="\">home</a>
+  <a href="\food">food items</a>
+  {% if user.is_authenticated %}
+  Welcome {{request.user.username}}
+  <a class="nav-right" href="\logout">logout</a>
+  {% else %}
+  <a class="nav-right" href="\login">login</a>
+  <a class="nav-right" href="\register">signup</a>
+  {% endif %}
+</nav>
+{% endblock %}
